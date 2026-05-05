@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Currículo</title>
+  <meta name="description" content="Currículo profissional editável, com exportação em PDF." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Fonte moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- html2pdf para exportar em PDF -->
+  
+</head>
+<body>
+  <!-- Container principal do currículo -->
+  <main id="curriculo" class="curriculo">
+    <!-- Cabeçalho com foto e identidade -->
+    <header class="header">
+      <div class="avatar-wrapper">
+        <label for="upload-foto" class="avatar" title="Clique para enviar uma foto">
+          <img id="foto-perfil" src="fotoperfil.jpeg" alt="Foto de perfil" />
+          <span class="avatar-overlay no-print"><i class="fa-solid fa-camera"></i></span>
+        </label>
+      </div>
+
+      <div class="identidade">
+        <h1>Guilherme Rocha Silva</h1>
+        <p class="cargo">Desenvolvedor</p>
+
+        <ul class="contatos">
+          <li><i class="fa-solid fa-envelope"></i><span>guilhermerocha1401@gmail.com</span></li>
+          <li><i class="fa-solid fa-phone"></i><span>+55 (38) 9 9823-2691</span></li>
+          <li><i class="fa-solid fa-location-dot"></i><span>Montes Claros, Brasil</span></li>
+        </ul>
+
+        <ul class="redes">
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/GuilhermeXweb" target="_blank">github.com/GuilhermeXweb</a>
+          </li>
+        </ul>
+      </div>  
+    </header>
+
+    <!-- Sobre mim -->
+    <section class="card">
+      <h2><i class="fa-solid fa-user"></i> Sobre mim</h2>
+      <p>
+        Estudante de Análise e Desenvolvimento de Sistemas.
+        Buscando oportunidades para aplicar meu conhecimento e contribuir com projetos inovadores.
+      </p>
+    </section>
+
+    <!-- Experiência -->
+    <section class="card">
+      <h2><i class="fa-solid fa-briefcase"></i> Experiência</h2>
+
+      <div class="experiencia">
+        <div class="exp-header">
+          <h3>Cargo / Posição</h3>
+          <span class="periodo">2026</span>
+        </div>
+        <p class="empresa">Nome da Empresa · Local</p>
+        <p>
+          Sem experiência no momento.
+        </p>
+      </div>
+
+      <div class="experiencia">
+        <div class="exp-header">
+          <h3>Cargo Anterior</h3>
+          <span class="periodo">2026</span>
+        </div>
+        <p class="empresa">Empresa Anterior · Local</p>
+        <p>
+          Sem experiência.
+        </p>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="card">
+      <h2><i class="fa-solid fa-bolt"></i> Habilidades</h2>
+
+      <div class="habilidades-form no-print">
+        <input type="text" id="input-habilidade" placeholder="Ex: JavaScript, React, Node..." />
+        <button id="btn-add-habilidade" class="btn btn-secondary">
+          <i class="fa-solid fa-plus"></i> Adicionar
+        </button>
+      </div>
+
+      <ul id="lista-habilidades" class="habilidades">
+        <li>JavaScript <button class="remover no-print" aria-label="Remover">&times;</button></li>
+        <li>HTML5 <button class="remover no-print" aria-label="Remover">&times;</button></li>
+        <li>Git <button class="remover no-print" aria-label="Remover">&times;</button></li>
+      </ul>
+    </section>
+
+    <!-- Contato final -->
+    <section class="card">
+      <h2><i class="fa-solid fa-paper-plane"></i> Contato</h2>
+      <p>
+        Estou aberto(a) a novas oportunidades. Sinta-se à vontade para entrar em contato!
+      </p>
+      <a id="link-pdf" href="https://drive.google.com/file/d/181GhRbp5AomLOken9ULkWPCVGNdj2zI7/view?usp=drive_link" download="curriculo.pdf">
+         Baixar Currículo em PDF
+       </a>
+    </section>
+  </main>
+</body>
+</html>
